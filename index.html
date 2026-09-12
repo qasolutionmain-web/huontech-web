@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HUONTECH</title>
+<meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -44,22 +45,6 @@
     --radius-s:6px;
     --radius-m:12px;
     --radius-l:22px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#0a1420;
-      --surface:#101d2b;
-      --surface-2:#16293a;
-      --ink:#eef2f7;
-      --muted:#93a3b8;
-      --border:#22354c;
-      --teal:#5b9bd9;
-      --teal-strong:#8ec2f0;
-      --teal-tint:#13293f;
-      --ferment:#e2895f;
-      --ferment-tint:#2c1e18;
-      --shadow: 0 1px 3px rgba(0,0,0,0.4);
-    }
   }
   :root[data-theme="dark"]{
     --bg:#0a1420;
@@ -205,12 +190,14 @@
     nav.primary{
       position:absolute; top:100%; left:0; right:0;
       flex-direction:column; align-items:flex-start; gap:2px;
-      background:var(--surface); border-bottom:1px solid var(--border);
-      padding:10px 24px 18px;
+      background:var(--surface); border-bottom:0 solid var(--border);
+      padding:0 24px;
       max-height:0; overflow:hidden;
-      transition:max-height .28s ease;
+      transition:max-height .28s ease, padding .28s ease;
     }
-    #nav-check:checked ~ nav.primary{ max-height:320px; }
+    #nav-check:checked ~ nav.primary{
+      max-height:320px; padding:10px 24px 18px; border-bottom-width:1px;
+    }
     nav.primary a{ width:100%; padding-block:10px; }
     nav.primary .cta-btn{ margin-top:8px; }
     .nav-toggle{
