@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HUONTECH</title>
 <meta name="color-scheme" content="light">
+<meta name="description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HUONTECH">
+<meta property="og:description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HUONTECH">
+<meta name="twitter:description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -460,8 +467,7 @@
   .facility-card p{ margin:0; color:var(--muted); font-size:0.9rem; }
 
   /* ---------- contact ---------- */
-  .contact-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; margin-top:36px; align-items:stretch; }
-  @media (max-width:860px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-grid{ display:grid; grid-template-columns:1fr; gap:44px; margin-top:36px; max-width:640px; }
   .contact-card{
     background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l);
     padding:32px 30px; display:flex; flex-direction:column; gap:20px;
@@ -475,14 +481,6 @@
   .contact-row .v{ font-weight:700; font-size:1.02rem; }
   .contact-row a.v{ text-decoration:none; }
   .contact-row a.v:hover{ color:var(--teal-strong); }
-
-  .map-panel{
-    border-radius:var(--radius-l); border:1px solid var(--border);
-    background:
-      radial-gradient(70% 70% at 30% 20%, var(--teal-tint), transparent 60%),
-      var(--surface-2);
-    display:flex; align-items:center; justify-content:center; padding:32px; min-height:220px;
-  }
 
   footer{ padding-block:52px 28px; background:var(--surface); }
   .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:36px; }
@@ -938,13 +936,6 @@
         </div>
         <a class="cta-btn" href="tel:055-755-5503" style="align-self:flex-start; margin-top:6px;">전화 문의하기</a>
       </div>
-      <div class="map-panel">
-        <svg width="110" height="130" viewBox="0 0 110 130" fill="none">
-          <path d="M55 5C29 5 8 26 8 52c0 36 47 73 47 73s47-37 47-73C102 26 81 5 55 5Z" stroke="var(--teal)" stroke-width="3" fill="var(--teal-tint)"/>
-          <circle cx="55" cy="52" r="17" fill="var(--teal)"/>
-          <text x="55" y="58" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--surface)">HT</text>
-        </svg>
-      </div>
     </div>
   </div>
 </section>
@@ -978,7 +969,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 HUONTECH Co., Ltd. All rights reserved.</span>
-      <span>㈜휴온텍 · 부경대학교 기술이전 연구소기업</span>
+      <span>㈜휴온텍</span>
     </div>
   </div>
 </footer>
