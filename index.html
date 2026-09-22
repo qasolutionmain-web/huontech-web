@@ -139,7 +139,7 @@
     display:flex; align-items:center; gap:28px;
   }
   nav.primary > a{
-    font-size:0.92rem; text-decoration:none; color:var(--muted);
+    font-size:0.92rem; font-weight:700; text-decoration:none; color:var(--muted);
     position:relative; padding-block:4px;
   }
   nav.primary > a::after{
@@ -152,7 +152,7 @@
 
   .nav-item{ position:relative; }
   .nav-item > a{
-    font-size:0.92rem; text-decoration:none; color:var(--muted);
+    font-size:0.92rem; font-weight:700; text-decoration:none; color:var(--muted);
     position:relative; padding-block:4px; display:inline-block;
   }
   .nav-item > a::after{
@@ -272,6 +272,7 @@
   h1.hero-title em{
     font-style:normal; color:#7ec4f0;
   }
+  h1.hero-title em.taxon{ font-style:italic; }
   p.hero-desc{
     color:#b7c4d4; font-size:1.06rem; max-width:56ch; margin-bottom:28px;
   }
@@ -388,7 +389,7 @@
   .product-photo figcaption{
     margin-top:10px; text-align:center; font-size:0.72rem; color:var(--muted);
   }
-  .product-panel .name{ font-family:'Fraunces', serif; font-size:1.7rem; font-weight:600; margin-bottom:6px; }
+  .product-panel .name{ font-family:'Fraunces', serif; font-size:clamp(1.05rem, 0.7rem + 1.4vw, 1.7rem); font-weight:600; margin-bottom:6px; white-space:nowrap; }
   .product-panel .name .en{ color:var(--teal-strong); }
   .product-panel .sub{ color:var(--muted); margin-bottom:22px; font-size:0.98rem; }
   table.spec{ width:100%; border-collapse:collapse; font-size:0.92rem; }
@@ -604,7 +605,7 @@
         </div>
         <div class="hero-slide" data-slide="1">
           <p class="hero-eyebrow mono">Patented Strain HOT01</p>
-          <h1 class="hero-title">김치에서 유래된 특허 균주,<br><em>Lactobacillus Plantarum, HOT01</em></h1>
+          <h1 class="hero-title">김치에서 유래된 특허 균주,<br><em class="taxon">Lactiplantibacillus Plantarum</em> HOT01</h1>
           <p class="hero-desc">부경대학교로부터 전용실시권을 확보한 항콜레스테롤 활성 우수 균주 HOT01.<br>장 건강과 콜레스테롤 개선, 두 가지 기능성을 하나의 생균에 담았습니다.</p>
           <div class="chip-row">
             <span class="chip">유래 <strong>김치 (식물성)</strong></span>
@@ -618,7 +619,7 @@
         </div>
         <div class="hero-slide" data-slide="2">
           <p class="hero-eyebrow mono">4 Business Axes</p>
-          <h1 class="hero-title">미생물 발효기술로 여는<br><em>헬스케어의 내일</em></h1>
+          <h1 class="hero-title">이로운 기술만 고민하는<br><em>토탈 헬스케어 기업</em></h1>
           <p class="hero-desc">프로바이오틱스, 세포배양배지, 농축산제제, OEM·ODM까지. 원료 공급부터 완제품, 위탁생산까지 함께할 B2B 파트너를 찾습니다.</p>
           <div class="chip-row">
             <span class="chip">원료 공급</span>
@@ -731,13 +732,13 @@
       <div class="axis-card">
         <div class="idx-row">
           <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M16 5h8v9l6.5 11.5A4 4 0 0 1 27 31H13a4 4 0 0 1-3.5-5.5L16 14V5Z"/><line x1="13.5" y1="24" x2="26.5" y2="24"/></svg>
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M6 33V18l7 4.5V18l7 4.5V18l7 4.5V33H6Z"/><line x1="6" y1="33" x2="34" y2="33"/><line x1="10" y1="18" x2="10" y2="13" stroke-linecap="round"/></svg>
           </div>
           <div class="idx">02</div>
         </div>
-        <div class="lead-flag">연구자 대상</div>
-        <h4>세포배양배지</h4>
-        <p>자체 브랜드 Celldy(셀디)의 DMEM 등 범용 배지와 CAR-NK 배지 제품군을 공급합니다.</p>
+        <div class="lead-flag">수탁 생산</div>
+        <h4>OEM · ODM</h4>
+        <p>미생물 발효 수탁 생산 및 제품 개발 대행. 대량생산·자동화 설비로 원가 경쟁력을 확보합니다.</p>
       </div>
       <div class="axis-card">
         <div class="idx-row">
@@ -753,13 +754,13 @@
       <div class="axis-card">
         <div class="idx-row">
           <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M6 33V18l7 4.5V18l7 4.5V18l7 4.5V33H6Z"/><line x1="6" y1="33" x2="34" y2="33"/><line x1="10" y1="18" x2="10" y2="13" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M16 5h8v9l6.5 11.5A4 4 0 0 1 27 31H13a4 4 0 0 1-3.5-5.5L16 14V5Z"/><line x1="13.5" y1="24" x2="26.5" y2="24"/></svg>
           </div>
           <div class="idx">04</div>
         </div>
-        <div class="lead-flag">수탁 생산</div>
-        <h4>OEM · ODM</h4>
-        <p>미생물 발효 수탁 생산 및 제품 개발 대행. 대량생산·자동화 설비로 원가 경쟁력을 확보합니다.</p>
+        <div class="lead-flag">연구자 대상</div>
+        <h4>세포배양배지</h4>
+        <p>자체 브랜드 Celldy(셀디)의 DMEM 등 범용 배지와 CAR-NK 배지 제품군을 공급합니다.</p>
       </div>
     </div>
 
@@ -776,14 +777,13 @@
         </div>
         <p class="sub">캡슐당 100억 CFU 건강기능식품 · 고농도 500억 제품 라인업 준비 중</p>
         <table class="spec">
-          <tr><th>균주명</th><td>Lactiplantibacillus plantarum HOT01</td></tr>
+          <tr><th>균주명</th><td><em>Lactiplantibacillus plantarum</em> HOT01</td></tr>
           <tr><th>유래</th><td>김치 (식물성)</td></tr>
           <tr><th>보증성분</th><td>1.0 × 10¹⁰ CFU/g (캡슐당 100억)</td></tr>
           <tr><th>제형 · 보관</th><td>생균(Live) · 상온 보관</td></tr>
           <tr><th>제조원</th><td>㈜휴온텍 (대한민국)</td></tr>
           <tr><th>원료 형태</th><td>벌크 10kg 단위 · 소비기한 제조일로부터 12개월</td></tr>
         </table>
-        <p class="dev-note"><strong>개발 방향</strong> — 고시형에서 개별인정형으로, 전임상·임상 확보를 통한 고부가가치 전환을 추진합니다.</p>
       </div>
       <div class="func-row">
         <div class="func-item">
@@ -792,7 +792,11 @@
         </div>
         <div class="func-item ferment">
           <div class="badge">02</div>
-          <div><h5>콜레스테롤</h5><p>혈중 콜레스테롤 개선 · 항상성 유지 (동물실험 진행 중)</p></div>
+          <div><h5>콜레스테롤</h5><p>혈중 콜레스테롤 개선 · 항상성 유지</p></div>
+        </div>
+        <div class="func-item">
+          <div class="badge">03</div>
+          <div><h5>공동연구</h5><p>동아대학교 이중호 교수팀과 in vivo 연구 진행 중</p></div>
         </div>
       </div>
     </div>
