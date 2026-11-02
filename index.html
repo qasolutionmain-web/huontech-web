@@ -3,1088 +3,538 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HUONTECH</title>
+<title>HUONTECH | 휴온텍</title>
 <meta name="color-scheme" content="light">
-<meta name="description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
+<meta name="description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스, 세포배양배지(Celldy), OEM·ODM, 농축산제제 사업을 소개합니다.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="HUONTECH">
-<meta property="og:description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HUONTECH">
-<meta name="twitter:description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스와 4대 사업축을 소개합니다.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="HUONTECH | 휴온텍">
+<meta property="og:description" content="㈜휴온텍 — 특허 균주 HOT01 기반 프로바이오틱스, 세포배양배지(Celldy), OEM·ODM, 농축산제제 사업을 소개합니다.">
+<meta property="og:image" content="images/ldl-cut-pro-lifestyle.png">
+<meta name="twitter:card" content="summary_large_image">
 <style>
-  @font-face{
-    font-family:'NanumSquareNeo';
-    src:url('fonts/NanumSquareNeo-Regular.ttf') format('truetype');
-    font-weight:400; font-style:normal; font-display:swap;
-  }
-  @font-face{
-    font-family:'NanumSquareNeo';
-    src:url('fonts/NanumSquareNeo-Bold.ttf') format('truetype');
-    font-weight:700; font-style:normal; font-display:swap;
-  }
-  @font-face{
-    font-family:'NanumSquareNeo';
-    src:url('fonts/NanumSquareNeo-ExtraBold.ttf') format('truetype');
-    font-weight:800; font-style:normal; font-display:swap;
-  }
-  @font-face{
-    font-family:'NanumSquareNeo';
-    src:url('fonts/NanumSquareNeo-Heavy.ttf') format('truetype');
-    font-weight:900; font-style:normal; font-display:swap;
-  }
-  :root{
-    --bg:#ffffff;
-    --surface:#f5f7fb;
-    --surface-2:#e9edf4;
-    --ink:#0d1b2e;
-    --muted:#55637a;
-    --border:#dde3ec;
-    --teal:#0b3d78;
-    --teal-strong:#124a91;
-    --teal-tint:#e8eef8;
-    --ferment:#a8472b;
-    --ferment-tint:#f5e6df;
-    --shadow: 0 1px 2px rgba(13,27,46,0.06);
-    --radius-s:6px;
-    --radius-m:12px;
-    --radius-l:22px;
-  }
-  :root[data-theme="dark"]{
-    --bg:#0a1420;
-    --surface:#101d2b;
-    --surface-2:#16293a;
-    --ink:#eef2f7;
-    --muted:#93a3b8;
-    --border:#22354c;
-    --teal:#5b9bd9;
-    --teal-strong:#8ec2f0;
-    --teal-tint:#13293f;
-    --ferment:#e2895f;
-    --ferment-tint:#2c1e18;
-    --shadow: 0 1px 3px rgba(0,0,0,0.4);
-  }
+@font-face{font-family:'NanumSquareNeo';src:url('fonts/NanumSquareNeo-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'NanumSquareNeo';src:url('fonts/NanumSquareNeo-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}
+body{margin:0;background:#ffffff}
+a{color:#111111;text-decoration:none}a:hover{color:#0b3d78}
+.gnb-links a:hover{text-decoration:underline;text-underline-offset:6px}
+.ht-slide{animation:htfade .7s ease}
+@keyframes htfade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){.ht-slide{animation:none}}
+.ht-card{transition:transform .25s ease}
+.media-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.biz-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quick-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+@media (max-width:1100px){.quick-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+a.qtile{display:flex;flex-direction:column;gap:14px;min-height:150px;padding:20px 20px 22px;box-sizing:border-box;border-radius:24px;background:#f6f4f0;color:#111111;transition:background .25s ease,color .25s ease,transform .25s ease}
+a.qtile .qi{color:#0b3d78}a.qtile .qn{color:#6b6458}a.qtile .qs{color:#4b5260}a.qtile .qa{border:1px solid #d9d3c8}
+a.qtile:hover{background:#0b3d78;color:#ffffff;transform:translateY(-4px)}
+a.qtile:hover .qi{color:#ffffff}a.qtile:hover .qn{color:#b5cce8}a.qtile:hover .qs{color:#c9d8ea}a.qtile:hover .qa{border-color:rgba(255,255,255,0.4)}
+a.qtile.qdark{background:#111111;color:#ffffff}
+a.qtile.qdark .qi{color:#ffffff}a.qtile.qdark .qn{color:#a3a9b2}a.qtile.qdark .qs{color:#c9ced6}a.qtile.qdark .qa{border-color:rgba(255,255,255,0.3)}
+a.qtile.qdark:hover{background:#0b3d78}
+@media (prefers-reduced-motion: reduce){a.qtile{transition:none}a.qtile:hover{transform:none}}
+@media (max-width:900px){.media-grid,.biz-grid{grid-template-columns:minmax(0,1fr)}}
+.ht-card:hover{transform:translateY(-4px)}
+@media (max-width:900px){.gnb-links{display:none !important}.util-left{display:none !important}}
+@media (max-width:760px){.hero-visual{display:none !important}}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
-
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'NanumSquareNeo','IBM Plex Sans KR',sans-serif;
-    font-weight:400;
-    font-size:16px;
-    line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;}
-  [hidden]{display:none!important;}
-
-  h1,h2,h3{
-    font-family:'NanumSquareNeo','IBM Plex Sans KR',sans-serif;
-    text-wrap:balance;
-    margin:0;
-    color:var(--ink);
-    font-weight:800;
-  }
-  h4,h5,h6{
-    font-family:'NanumSquareNeo','IBM Plex Sans KR',sans-serif;
-    font-weight:700;
-    margin:0;
-  }
-  p,li,td,th,dd,dt,address{ font-weight:400; }
-  .en{ font-family:'Fraunces', serif; }
-  .mono{ font-family:'IBM Plex Mono', monospace; }
-
-  a{ color:inherit; }
-
-  .wrap{
-    max-width:1120px;
-    margin:0 auto;
-    padding-inline:24px;
-  }
-  @media (max-width:640px){ .wrap{ padding-inline:18px; } }
-
-  /* ---------- header ---------- */
-  header.site{
-    position:sticky; top:0; z-index:50;
-    background:color-mix(in srgb, var(--bg) 86%, transparent);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--border);
-  }
-  .nav-row{
-    display:flex; align-items:center; justify-content:space-between;
-    padding-block:16px;
-    gap:16px;
-  }
-  .wordmark{
-    display:flex; align-items:center; gap:10px;
-    text-decoration:none;
-    white-space:nowrap;
-  }
-  .wordmark .logo-mark{ display:block; height:22px; width:auto; }
-  .wordmark .dot{ color:var(--teal); }
-  .wordmark small{
-    font-size:0.62rem;
-    color:var(--muted);
-    font-weight:700;
-  }
-  nav.primary{
-    display:flex; align-items:center; gap:28px;
-  }
-  nav.primary > a{
-    font-size:0.92rem; font-weight:700; text-decoration:none; color:var(--muted);
-    position:relative; padding-block:4px;
-  }
-  nav.primary > a::after{
-    content:""; position:absolute; left:0; right:0; bottom:-2px; height:2px;
-    background:var(--teal); transform:scaleX(0); transform-origin:left;
-    transition:transform .25s ease;
-  }
-  nav.primary > a:hover{ color:var(--ink); }
-  nav.primary > a:hover::after{ transform:scaleX(1); }
-
-  .nav-item{ position:relative; }
-  .nav-item > a{
-    font-size:0.92rem; font-weight:700; text-decoration:none; color:var(--muted);
-    position:relative; padding-block:4px; display:inline-block;
-  }
-  .nav-item > a::after{
-    content:""; position:absolute; left:0; right:0; bottom:-2px; height:2px;
-    background:var(--teal); transform:scaleX(0); transform-origin:left;
-    transition:transform .25s ease;
-  }
-  .nav-item:hover > a{ color:var(--ink); }
-  .nav-item:hover > a::after{ transform:scaleX(1); }
-  .nav-dropdown{
-    position:absolute; top:100%; left:50%; transform:translate(-50%,4px);
-    min-width:168px; background:var(--surface); border:1px solid var(--border);
-    border-radius:var(--radius-s); padding:8px; box-shadow:0 14px 30px -14px rgba(13,27,46,0.25);
-    opacity:0; pointer-events:none; transition:opacity .18s ease, transform .18s ease;
-  }
-  .nav-item:hover .nav-dropdown{ opacity:1; pointer-events:auto; transform:translate(-50%,8px); }
-  .nav-dropdown a{
-    display:block; padding:8px 10px; border-radius:6px; font-size:0.86rem;
-    text-decoration:none; color:var(--muted); white-space:nowrap;
-  }
-  .nav-dropdown a:hover{ background:var(--teal-tint); color:var(--teal-strong); }
-  @media (max-width:820px){ .nav-dropdown{ display:none; } }
-  .cta-btn{
-    display:inline-flex; align-items:center; gap:8px;
-    background:var(--teal); color:#f4fbfa;
-    padding:10px 18px; border-radius:999px;
-    font-size:0.88rem; font-weight:700; text-decoration:none;
-    white-space:nowrap;
-    box-shadow:var(--shadow);
-    transition:background .2s ease, transform .2s ease;
-  }
-  .cta-btn:hover{ background:var(--teal-strong); transform:translateY(-1px); }
-  nav.primary .cta-btn{ color:#ffffff; }
-  .cta-btn.outline{
-    background:transparent; color:var(--ink); border:1.5px solid var(--border);
-  }
-  .cta-btn.outline:hover{ border-color:var(--teal); color:var(--teal-strong); background:transparent; }
-
-  .nav-toggle{ display:none; }
-  #nav-check{ display:none; }
-
-  @media (max-width:820px){
-    nav.primary{
-      position:absolute; top:100%; left:0; right:0;
-      flex-direction:column; align-items:flex-start; gap:2px;
-      background:var(--surface); border-bottom:0 solid var(--border);
-      padding:0 24px;
-      max-height:0; overflow:hidden;
-      transition:max-height .28s ease, padding .28s ease;
-    }
-    #nav-check:checked ~ nav.primary{
-      max-height:320px; padding:10px 24px 18px; border-bottom-width:1px;
-    }
-    nav.primary a{ width:100%; padding-block:10px; }
-    nav.primary .cta-btn{ margin-top:8px; }
-    .nav-toggle{
-      display:flex; flex-direction:column; justify-content:center; gap:5px;
-      width:34px; height:34px; cursor:pointer;
-    }
-    .nav-toggle span{ display:block; height:2px; background:var(--ink); border-radius:2px; }
-  }
-  @media (min-width:821px){ .nav-toggle{ display:none; } }
-
-  /* ---------- section rhythm ---------- */
-  section{ padding-block:88px; border-bottom:1px solid var(--border); }
-  section:last-of-type{ border-bottom:none; }
-  section.tint{ background:var(--surface); }
-  @media (max-width:640px){ section{ padding-block:60px; } }
-
-  .eyebrow{
-    display:flex; align-items:center; gap:10px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase;
-    color:var(--teal-strong);
-    margin-bottom:18px;
-  }
-  .eyebrow .num{ color:var(--muted); }
-  .eyebrow::before{
-    content:""; width:26px; height:1px; background:var(--teal);
-  }
-  h2.headline{ font-size:clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); margin-bottom:16px; }
-  p.lede{ color:var(--muted); font-size:1.05rem; max-width:62ch; margin:0 0 8px; }
-
-  /* ---------- hero (banner slider) ---------- */
-  #hero{
-    position:relative; overflow:hidden;
-    background:linear-gradient(155deg,#0a1420 0%,#0f2038 60%,#0b3d78 130%);
-    color:#eef2f7;
-    border-bottom:1px solid rgba(255,255,255,0.08);
-  }
-  #hero canvas{
-    position:absolute; inset:0; width:100%; height:100%;
-    opacity:0.5; pointer-events:none;
-  }
-  .hero-slider{ position:relative; z-index:2; }
-  .hero-slides{ position:relative; min-height:340px; }
-  .hero-slide{
-    position:absolute; inset:0;
-    padding-block:96px 64px;
-    opacity:0; visibility:hidden; transform:translateY(10px);
-    transition:opacity .5s ease, transform .5s ease, visibility 0s linear .5s;
-  }
-  .hero-slide.is-active{
-    position:relative; opacity:1; visibility:visible; transform:translateY(0);
-    transition:opacity .5s ease, transform .5s ease;
-  }
-  .hero-eyebrow{
-    font-family:'IBM Plex Mono', monospace; font-size:0.8rem; letter-spacing:0.22em;
-    color:#7ec4f0; text-transform:uppercase; margin-bottom:20px;
-  }
-  h1.hero-title{
-    font-size:clamp(2rem, 1.4rem + 3vw, 3.2rem);
-    line-height:1.28; color:#fff;
-    font-weight:900;
-    margin-bottom:20px; max-width:18ch;
-  }
-  h1.hero-title em{
-    font-style:normal; color:#7ec4f0;
-  }
-  h1.hero-title em.taxon{ font-style:italic; }
-  p.hero-desc{
-    color:#b7c4d4; font-size:1.06rem; max-width:56ch; margin-bottom:28px;
-  }
-  .chip-row{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px; }
-  .chip{
-    font-size:0.82rem;
-    border:1px solid rgba(255,255,255,0.18); border-radius:999px;
-    padding:7px 14px; color:#c7d3e0; background:rgba(255,255,255,0.05);
-  }
-  .chip strong{ color:#fff; font-weight:700; }
-  .btn-row{ display:flex; flex-wrap:wrap; gap:14px; }
-  #hero .cta-btn.outline{ color:#fff; border-color:rgba(255,255,255,0.35); }
-  #hero .cta-btn.outline:hover{ border-color:#7ec4f0; color:#7ec4f0; }
-
-  .hero-controls{
-    position:relative; z-index:2;
-    display:flex; align-items:center; justify-content:space-between;
-    padding-block:18px 28px; border-top:1px solid rgba(255,255,255,0.1);
-  }
-  .hero-dots{ display:flex; gap:8px; }
-  .hero-dots button{
-    width:22px; height:3px; border-radius:2px; border:none; background:rgba(255,255,255,0.25);
-    cursor:pointer; padding:0; transition:background .2s ease;
-  }
-  .hero-dots button.is-active{ background:#7ec4f0; }
-  .hero-arrows{ display:flex; gap:10px; }
-  .hero-arrows button{
-    width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.25);
-    background:transparent; color:#fff; cursor:pointer;
-    display:flex; align-items:center; justify-content:center;
-    transition:border-color .2s ease, background .2s ease;
-  }
-  .hero-arrows button:hover{ border-color:#7ec4f0; background:rgba(255,255,255,0.08); }
-
-  /* ---------- quicklinks ---------- */
-  #quicklinks{ padding-block:0; border-bottom:1px solid var(--border); }
-  .quicklink-grid{
-    display:grid; grid-template-columns:repeat(4,1fr);
-    margin-top:-1px;
-  }
-  @media (max-width:760px){ .quicklink-grid{ grid-template-columns:1fr 1fr; } }
-  @media (max-width:440px){ .quicklink-grid{ grid-template-columns:1fr; } }
-  .quicklink-card{
-    display:flex; flex-direction:column; gap:10px;
-    padding:30px 26px; border-right:1px solid var(--border); border-bottom:1px solid var(--border);
-    text-decoration:none; color:var(--ink);
-    transition:background .2s ease;
-  }
-  .quicklink-grid a.quicklink-card:hover{ background:var(--surface); }
-  .quicklink-grid a:nth-child(4n){ border-right:none; }
-  @media (max-width:760px){ .quicklink-grid a:nth-child(2n){ border-right:none; } .quicklink-grid a:nth-child(4n){ border-right:1px solid var(--border); } }
-  @media (max-width:440px){ .quicklink-grid a{ border-right:none !important; } }
-  .quicklink-card .qicon{ width:34px; height:34px; color:var(--teal); }
-  .quicklink-card h5{ margin:0; font-size:1rem; font-weight:700; }
-  .quicklink-card p{ margin:0; color:var(--muted); font-size:0.85rem; }
-  .quicklink-card .more{
-    margin-top:auto; font-size:0.85rem; font-weight:700;
-    color:var(--teal-strong);
-  }
-
-  /* ---------- about ---------- */
-  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; margin-top:36px; }
-  @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; gap:36px; } }
-  .fact-list{ display:grid; grid-template-columns:1fr 1fr; gap:20px 18px; margin-top:28px; }
-  @media (max-width:520px){ .fact-list{ grid-template-columns:1fr; } }
-  .fact{ border-left:2px solid var(--teal); padding-left:14px; }
-  .fact .k{ font-size:0.8rem; font-weight:700; color:var(--muted); margin-bottom:4px; }
-  .fact .v{ font-weight:700; font-size:1rem; }
-
-  .vision-panel{
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l);
-    padding:32px 30px;
-  }
-  .vision-panel .en{ font-size:0.82rem; letter-spacing:0.16em; color:var(--teal-strong); }
-  .vision-panel h3{ font-size:1.35rem; margin:10px 0 20px; }
-  .vision-panel ol{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:16px; }
-  .vision-panel li{ display:flex; gap:14px; font-size:0.96rem; color:var(--ink); }
-  .vision-panel li .idx{
-    font-family:'IBM Plex Mono', monospace; color:var(--teal-strong); font-weight:500;
-    flex:none; width:22px;
-  }
-
-  /* ---------- business cards ---------- */
-  .axis-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:36px; }
-  @media (max-width:920px){ .axis-grid{ grid-template-columns:1fr 1fr; } }
-  @media (max-width:520px){ .axis-grid{ grid-template-columns:1fr; } }
-  .axis-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-m);
-    padding:22px 20px; display:flex; flex-direction:column; gap:10px; min-height:180px;
-    transition:border-color .2s ease, transform .2s ease;
-  }
-  .axis-card:hover{ border-color:var(--teal); transform:translateY(-3px); }
-  .axis-card .idx{ font-family:'Fraunces', serif; font-size:1.1rem; color:var(--muted); }
-  .axis-card .lead-flag{
-    font-size:0.76rem; font-weight:700;
-    color:var(--ferment);
-  }
-  .axis-card h4{ margin:0; font-size:1.05rem; font-weight:700; }
-  .axis-card p{ margin:0; color:var(--muted); font-size:0.9rem; }
-
-  /* ---------- product spotlight ---------- */
-  .product-panel{
-    margin-top:56px;
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l);
-    padding:36px 34px; display:grid; grid-template-columns:auto 1fr 1fr; gap:40px; align-items:start;
-  }
-  @media (max-width:1100px){ .product-panel{ grid-template-columns:auto 1fr; } .product-panel .func-row{ grid-column:1 / -1; flex-direction:row; flex-wrap:wrap; } .product-panel .func-row .func-item{ flex:1 1 240px; } }
-  @media (max-width:860px){ .product-panel{ grid-template-columns:1fr; padding:28px 22px; } .product-photo{ margin:0 auto; } }
-  .product-photo{
-    flex:none; width:150px; align-self:start;
-    filter:drop-shadow(0 14px 22px rgba(15,31,45,0.22));
-  }
-  .product-photo img{ display:block; width:100%; height:auto; }
-  .product-photo figcaption{
-    margin-top:10px; text-align:center; font-size:0.72rem; color:var(--muted);
-  }
-  .product-panel .name{ font-family:'Fraunces', serif; font-size:clamp(1.05rem, 0.7rem + 1.4vw, 1.7rem); font-weight:600; margin-bottom:6px; white-space:nowrap; }
-  .product-panel .name .en{ color:var(--teal-strong); }
-  .product-panel .sub{ color:var(--muted); margin-bottom:22px; font-size:0.98rem; }
-  table.spec{ width:100%; border-collapse:collapse; font-size:0.92rem; }
-  table.spec th{ text-align:left; color:var(--muted); font-weight:400; padding:9px 10px 9px 0; width:34%; vertical-align:top; }
-  table.spec td{ padding:9px 0; font-weight:700; font-size:0.92rem; border-top:1px solid var(--border); }
-  table.spec tr:first-child td, table.spec tr:first-child th{ border-top:none; }
-
-  .func-row{ display:flex; flex-direction:column; gap:14px; }
-  .func-item{
-    display:flex; gap:14px; padding:16px; border-radius:var(--radius-s);
-    background:var(--surface-2);
-  }
-  .func-item .badge{
-    flex:none; width:40px; height:40px; border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    background:var(--teal); color:#f4fbfa; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:0.86rem;
-  }
-  .func-item.ferment .badge{ background:var(--ferment); }
-  .func-item h5{ margin:0 0 4px; font-size:0.98rem; }
-  .func-item p{ margin:0; color:var(--muted); font-size:0.86rem; }
-  .dev-note{
-    margin-top:16px; font-size:0.85rem; color:var(--muted);
-    border-top:1px dashed var(--border); padding-top:14px;
-  }
-  .dev-note strong{ color:var(--ink); }
-
-  .partner-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:20px; }
-  @media (max-width:760px){ .partner-grid{ grid-template-columns:1fr; } }
-  .partner-card{ border:1px solid var(--border); border-radius:var(--radius-m); padding:20px; background:var(--bg); }
-  section.tint .partner-card{ background:var(--surface-2); }
-  .partner-card h5{ margin:0 0 8px; font-size:0.98rem; }
-  .partner-card p{ margin:0; color:var(--muted); font-size:0.87rem; }
-  .partner-cta{ margin-top:28px; display:flex; justify-content:center; }
-
-  /* ---------- technology ---------- */
-  .tech-grid{ display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:36px; align-items:start; }
-  @media (max-width:860px){ .tech-grid{ grid-template-columns:1fr; gap:32px; } }
-  table.patent{ width:100%; border-collapse:collapse; font-size:0.92rem; }
-  table.patent th{ text-align:left; color:var(--muted); font-weight:400; padding:10px 12px 10px 0; width:32%; }
-  table.patent td{ padding:10px 0; border-top:1px solid var(--border); }
-  table.patent tr:first-child td, table.patent tr:first-child th{ border-top:none; }
-  .evidence-box{
-    margin-top:22px; padding:18px 20px; border-left:3px solid var(--ferment);
-    background:var(--ferment-tint); border-radius:0 var(--radius-s) var(--radius-s) 0;
-    font-size:0.9rem; color:var(--ink);
-  }
-  .evidence-box p{ margin:0 0 8px; }
-  .evidence-box p:last-child{ margin:0; color:var(--muted); }
-
-  /* ---------- history / timeline ---------- */
-  .timeline{ margin-top:44px; display:flex; flex-direction:column; gap:0; }
-  .t-item{
-    display:grid; grid-template-columns:100px 24px 1fr; gap:0 20px; padding-block:20px;
-  }
-  .t-item .year{ font-family:'Fraunces', serif; font-weight:600; font-size:1.25rem; color:var(--teal-strong); }
-  .t-item .rail{ position:relative; display:flex; justify-content:center; }
-  .t-item .rail::before{
-    content:""; position:absolute; top:0; bottom:-20px; width:1px; background:var(--border);
-  }
-  .t-item:last-child .rail::before{ bottom:50%; }
-  .t-item .rail .dot{
-    width:11px; height:11px; border-radius:50%; background:var(--teal); border:3px solid var(--bg);
-    margin-top:5px; position:relative; z-index:1;
-  }
-  section.tint .t-item .rail .dot{ border-color:var(--surface); }
-  .t-item .body h5{ margin:0 0 4px; font-size:1rem; }
-  .t-item .body p{ margin:0; color:var(--muted); font-size:0.9rem; }
-  @media (max-width:560px){
-    .t-item{ grid-template-columns:70px 20px 1fr; }
-  }
-
-  .facility-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:52px; }
-  @media (max-width:760px){ .facility-grid{ grid-template-columns:1fr; } }
-  .facility-card{ border:1px solid var(--border); border-radius:var(--radius-m); padding:22px 24px; background:var(--surface); }
-  .facility-card h5{ margin:0 0 10px; font-size:0.98rem; display:flex; align-items:center; gap:8px; }
-  .facility-card h5 .en{ color:var(--teal-strong); font-size:0.76rem; letter-spacing:0.1em; }
-  .facility-card p{ margin:0; color:var(--muted); font-size:0.9rem; }
-
-  /* ---------- contact ---------- */
-  .contact-grid{ display:grid; grid-template-columns:1fr; gap:44px; margin-top:36px; max-width:640px; }
-  .contact-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-l);
-    padding:32px 30px; display:flex; flex-direction:column; gap:20px;
-  }
-  .contact-row{ display:flex; gap:16px; align-items:flex-start; }
-  .contact-row .ic{
-    flex:none; width:38px; height:38px; border-radius:50%; background:var(--teal-tint);
-    display:flex; align-items:center; justify-content:center; color:var(--teal-strong);
-  }
-  .contact-row .k{ font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:3px; }
-  .contact-row .v{ font-weight:700; font-size:1.02rem; }
-  .contact-row a.v{ text-decoration:none; }
-  .contact-row a.v:hover{ color:var(--teal-strong); }
-
-  footer{ padding-block:52px 28px; background:var(--surface); }
-  .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:36px; }
-  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
-  @media (max-width:480px){ .footer-grid{ grid-template-columns:1fr; } }
-  .footer-brand{ display:flex; flex-direction:column; gap:8px; }
-  .footer-brand .wordmark .logo-mark{ height:20px; }
-  .footer-brand .en{ font-size:0.72rem; letter-spacing:0.14em; color:var(--muted); }
-  .footer-brand p{ margin:8px 0 0; color:var(--muted); font-size:0.86rem; max-width:34ch; }
-  .footer-col h6{
-    margin:0 0 14px; font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:0.72rem;
-    letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);
-  }
-  .footer-col ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
-  .footer-col a{ text-decoration:none; color:var(--ink); font-size:0.9rem; }
-  .footer-col a:hover{ color:var(--teal-strong); }
-  .footer-col address{ font-style:normal; color:var(--muted); font-size:0.86rem; line-height:1.7; }
-  .footer-bottom{
-    margin-top:36px; padding-top:20px; border-top:1px solid var(--border);
-    color:var(--muted); font-size:0.78rem;
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
-  }
-
-  /* ---------- illustrations & figures ---------- */
-  figure.figure{ margin:0; }
-  figure.figure figcaption{
-    margin-top:10px; font-size:0.82rem;
-    color:var(--muted); text-align:center;
-  }
-
-  .hero-visual-stack{ display:flex; flex-direction:column; gap:18px; }
-
-  .trait-badges{
-    display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:18px;
-  }
-  @media (max-width:520px){ .trait-badges{ grid-template-columns:1fr; } }
-  .trait-badge{
-    display:flex; align-items:center; gap:10px;
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-m);
-    padding:14px 16px; font-weight:700; font-size:0.95rem;
-  }
-  section.tint .trait-badge{ background:var(--bg); }
-  .trait-badge .dot{
-    flex:none; width:10px; height:10px; border-radius:50%; background:var(--teal);
-  }
-
-  .axis-icon{
-    width:38px; height:38px; color:var(--teal);
-    background:var(--teal-tint); border-radius:10px;
-    display:flex; align-items:center; justify-content:center; margin-bottom:2px;
-  }
-  .axis-icon svg{ width:22px; height:22px; }
-  .axis-card .idx-row{ display:flex; align-items:center; justify-content:space-between; }
-
-  .product-head{ display:flex; align-items:center; gap:14px; margin-bottom:6px; }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+img{max-width:100%}
+[hidden]{display:none !important}
+section[id]{scroll-margin-top:72px}
+.hero-dot{height:8px;width:8px;border:none;padding:0;cursor:pointer;border-radius:999px;background:#b8c0cc;transition:width .25s ease,background .25s ease}
+.hero-dot.is-active{width:28px;background:#111111}
+.biz-tab{height:48px;padding:0 24px;border-radius:999px;font-family:inherit;font-size:15px;font-weight:800;cursor:pointer;background:#ffffff;color:#111111;border:1.5px solid #d4d8de}
+.biz-tab.is-active{background:#111111;color:#ffffff;border-color:#111111}
+.mnav-toggle{display:none;width:44px;height:44px;border:none;background:transparent;border-radius:50%;cursor:pointer;align-items:center;justify-content:center;color:#111111}
+.mnav{display:flex;flex-direction:column;padding:8px clamp(16px,4vw,56px) 16px;border-top:1px solid #e5e7eb;background:#ffffff}
+.mnav a{padding:12px 0;font-size:16px;font-weight:800;border-bottom:1px solid #f0f1f3}
+@media (max-width:900px){.mnav-toggle{display:flex}}
+@media (min-width:901px){.mnav{display:none !important}}
 </style>
 </head>
 <body>
+<div style="font-family: 'NanumSquareNeo', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; color: #111111; background: #ffffff; line-height: 1.6; -webkit-font-smoothing: antialiased; min-width: 0">
 
-<header class="site">
-  <div class="wrap nav-row">
-    <a class="wordmark" href="#hero"><img class="logo-mark" src="images/huontech-logo.png" alt="HUONTECH"><small>휴온텍</small></a>
-    <input type="checkbox" id="nav-check">
-    <label class="nav-toggle" for="nav-check" aria-label="메뉴 열기">
-      <span></span><span></span><span></span>
-    </label>
-    <nav class="primary">
-      <div class="nav-item">
-        <a href="#about">회사소개</a>
-        <div class="nav-dropdown">
-          <a href="#about">기업 개요 · 비전</a>
-          <a href="#about">기술이전 흐름</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="#business">사업영역</a>
-        <div class="nav-dropdown">
-          <a href="#business">4대 핵심 사업축</a>
-          <a href="#business">대표 제품 LDL CUT PRO</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="#technology">핵심기술</a>
-        <div class="nav-dropdown">
-          <a href="#technology">특허 균주 HOT01</a>
-          <a href="#technology">균주 기능적 특성</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="#history">연혁</a>
-        <div class="nav-dropdown">
-          <a href="#history">성장 로드맵</a>
-          <a href="#history">조직 · 소재지</a>
-        </div>
-      </div>
-      <a href="#contact">오시는 길</a>
-      <a class="cta-btn" href="#contact">협업 제안 문의</a>
-    </nav>
-  </div>
+<!-- Utility bar -->
+<div style="background: #f4f5f7; border-bottom: 1px solid #e5e7eb">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px); height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 12px; color: #4b5260">
+<span class="util-left">국립부경대학교 기술이전 · 연구개발특구 연구소기업</span>
+<div style="display: flex; gap: 20px; margin-left: auto">
+<a href="#contact" style="color: #4b5260">B2B 협업</a>
+<a href="tel:070-4589-5744" style="color: #4b5260">070-4589-5744</a>
+<a href="mailto:ceo@huontech.co.kr" style="color: #4b5260">ceo@huontech.co.kr</a>
+</div>
+</div>
+</div>
+
+<!-- GNB -->
+<header style="position: sticky; top: 0; z-index: 20; background: #ffffff; border-bottom: 1px solid #e5e7eb">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px); height: 64px; display: flex; align-items: center; gap: 40px">
+<a href="#top" aria-label="HUONTECH 홈" style="display: flex; align-items: center"><img src="images/huontech-logo.png" alt="HUONTECH" style="height: 20px; width: auto; display: block"></a>
+<nav class="gnb-links" aria-label="주 메뉴" style="display: flex; gap: 36px; font-size: 15px; font-weight: 800">
+<a href="#business">사업영역</a>
+<a href="#product">제품</a>
+<a href="#technology">핵심기술</a>
+<a href="#company">회사소개</a>
+<a href="#history">연혁</a>
+<a href="#contact">오시는 길</a>
+</nav>
+<div style="margin-left: auto; display: flex; align-items: center; gap: 8px">
+<button type="button" aria-label="검색" style="width: 44px; height: 44px; border: none; background: transparent; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #111111">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+</button>
+<button type="button" class="mnav-toggle" id="mnav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mnav"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+<a href="#contact" style="display: inline-flex; align-items: center; height: 40px; padding: 0 20px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 14px; font-weight: 800">협업 문의</a>
+</div>
+</div>
+<nav class="mnav" id="mnav" aria-label="모바일 메뉴" hidden>
+<a href="#business">사업영역</a><a href="#product">제품</a><a href="#technology">핵심기술</a><a href="#company">회사소개</a><a href="#history">연혁</a><a href="#contact">오시는 길</a>
+</nav>
 </header>
 
-<section id="hero">
-  <canvas id="ferm-canvas" aria-hidden="true"></canvas>
-  <div class="hero-slider">
-    <div class="wrap">
-      <div class="hero-slides" id="hero-slides">
-        <div class="hero-slide is-active" data-slide="0">
-          <p class="hero-eyebrow mono">Human on Technology</p>
-          <h1 class="hero-title">항콜레스테롤 생균,<br><em>국산화의 시작</em></h1>
-          <p class="hero-desc">㈜휴온텍은 국립부경대학교 기술이전으로 출발한 미생물 발효기술 기반 헬스케어 기업입니다. 김치 유래 식물성 유산균 특허 균주 HOT01을 중심으로 이중기능성 프로바이오틱스를 개발합니다.</p>
-          <div class="chip-row">
-            <span class="chip">설립 <strong>2024. 10</strong></span>
-            <span class="chip">연구개발특구 <strong>연구소기업</strong></span>
-            <span class="chip">특허 <strong>제10-2005617호</strong> 전용실시권</span>
-          </div>
-          <div class="btn-row">
-            <a class="cta-btn" href="#business">사업영역 살펴보기</a>
-            <a class="cta-btn outline" href="#contact">협업 제안 문의</a>
-          </div>
-        </div>
-        <div class="hero-slide" data-slide="1">
-          <p class="hero-eyebrow mono">Patented Strain HOT01</p>
-          <h1 class="hero-title">김치에서 유래된 특허 균주,<br><em class="taxon">Lactiplantibacillus Plantarum</em> HOT01</h1>
-          <p class="hero-desc">부경대학교로부터 전용실시권을 확보한 항콜레스테롤 활성 우수 균주 HOT01.<br>장 건강과 콜레스테롤 개선, 두 가지 기능성을 하나의 생균에 담았습니다.</p>
-          <div class="chip-row">
-            <span class="chip">유래 <strong>김치 (식물성)</strong></span>
-            <span class="chip">제형 <strong>생균 · 상온보관</strong></span>
-            <span class="chip">보증성분 <strong>100억 CFU/g</strong></span>
-          </div>
-          <div class="btn-row">
-            <a class="cta-btn" href="#technology">핵심기술 보기</a>
-            <a class="cta-btn outline" href="#contact">협업 제안 문의</a>
-          </div>
-        </div>
-        <div class="hero-slide" data-slide="2">
-          <p class="hero-eyebrow mono">4 Business Axes</p>
-          <h1 class="hero-title">이로운 기술만 고민하는<br><em>토탈 헬스케어 기업</em></h1>
-          <p class="hero-desc">프로바이오틱스, 세포배양배지, 농축산제제, OEM·ODM까지. 원료 공급부터 완제품, 위탁생산까지 함께할 B2B 파트너를 찾습니다.</p>
-          <div class="chip-row">
-            <span class="chip">원료 공급</span>
-            <span class="chip">OEM · ODM</span>
-            <span class="chip">공동개발 · L/O</span>
-          </div>
-          <div class="btn-row">
-            <a class="cta-btn" href="#business">사업영역 살펴보기</a>
-            <a class="cta-btn outline" href="#contact">협업 제안 문의</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap hero-controls">
-      <div class="hero-dots" id="hero-dots">
-        <button type="button" class="is-active" data-goto="0" aria-label="1번째 슬라이드"></button>
-        <button type="button" data-goto="1" aria-label="2번째 슬라이드"></button>
-        <button type="button" data-goto="2" aria-label="3번째 슬라이드"></button>
-      </div>
-      <div class="hero-arrows">
-        <button type="button" id="hero-prev" aria-label="이전 슬라이드">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button type="button" id="hero-next" aria-label="다음 슬라이드">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
+<!-- HERO -->
+<section id="top" aria-label="주요 소식" style="position: relative">
+<div data-if="s0">
+<div class="ht-slide" style="background: #f3eee7; height: 560px; display: flex; align-items: center; overflow: hidden">
+<div style="max-width: 1600px; width: 100%; margin: 0 auto; padding: 24px clamp(20px, 6vw, 96px) 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 440px; min-width: 0">
+<p style="margin: 0 0 16px; font-size: 14px; font-weight: 800; color: #0b3d78; letter-spacing: 0.08em">NEW · LDL CUT PRO</p>
+<h1 style="margin: 0 0 20px; font-size: clamp(34px, 3.6vw, 56px); line-height: 1.18; font-weight: 800; letter-spacing: -0.02em">항콜레스테롤 생균,<br>국산화의 시작</h1>
+<p style="margin: 0 0 28px; font-size: 17px; color: #3d4452; max-width: 34em">김치 유래 특허 균주 HOT01로 만든 이중기능성 프로바이오틱스. 장 건강과 콜레스테롤 개선을 하나의 생균에 담았습니다.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#product" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 16px; font-weight: 800">제품 보기</a>
+<a href="#contact" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #111111; color: #111111; font-size: 16px; font-weight: 800; box-sizing: border-box">원료 공급 문의</a>
+</div>
+</div>
+<div class="hero-visual" style="flex: 1 1 360px; display: flex; justify-content: center; align-items: center; min-width: 0">
+<img src="images/ldl-cut-pro-lifestyle.png" alt="엘디엘컷 프로(LDL CUT PRO) 제품과 캡슐이 놓인 연출 사진" style="display: block; height: 420px; width: auto; max-width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 28px; box-shadow: 0 24px 48px rgba(60,45,25,0.16)">
+</div>
+</div>
+</div>
+</div>
+<div data-if="s1" hidden>
+<div class="ht-slide" style="background: #ebe5db; color: #111111; height: 560px; display: flex; align-items: center; overflow: hidden">
+<div style="max-width: 1600px; width: 100%; margin: 0 auto; padding: 24px clamp(20px, 6vw, 96px) 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 440px; min-width: 0">
+<p style="margin: 0 0 16px; font-size: 14px; font-weight: 800; color: #0b3d78; letter-spacing: 0.08em">PATENTED STRAIN</p>
+<h1 style="margin: 0 0 20px; font-size: clamp(34px, 3.6vw, 56px); line-height: 1.18; font-weight: 800; letter-spacing: -0.02em; color: #111111">김치에서 찾은<br>특허 균주 HOT01</h1>
+<p style="margin: 0 0 28px; font-size: 17px; color: #3d4452; max-width: 34em">부경대학교로부터 전용실시권을 확보한 항콜레스테롤 활성 우수 균주. 스크리닝 24종 중 최고 수준의 콜레스테롤 저감 효과를 확인했습니다.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#technology" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 16px; font-weight: 800">핵심기술 보기</a>
+<a href="#contact" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #111111; color: #111111; font-size: 16px; font-weight: 800; box-sizing: border-box">공동개발 문의</a>
+</div>
+</div>
+<div class="hero-visual" style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: clamp(80px, 9vw, 140px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: #0b3d78">HOT01</div>
+<div style="font-size: 20px; font-style: italic; color: #4b5260">Lactiplantibacillus plantarum</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px">
+<span style="padding: 8px 16px; border-radius: 999px; border: 1px solid #a89c88; font-size: 14px; color: #111111">특허 제10-2005617호</span>
+<span style="padding: 8px 16px; border-radius: 999px; border: 1px solid #a89c88; font-size: 14px; color: #111111">100억 CFU/g</span>
+<span style="padding: 8px 16px; border-radius: 999px; border: 1px solid #a89c88; font-size: 14px; color: #111111">상온 보관 생균</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-if="s2" hidden>
+<div class="ht-slide" style="background: #f5f2ed; color: #111111; height: 560px; display: flex; align-items: center; overflow: hidden">
+<div style="max-width: 1600px; width: 100%; margin: 0 auto; padding: 24px clamp(20px, 6vw, 96px) 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 440px; min-width: 0">
+<p style="margin: 0 0 16px; font-size: 14px; font-weight: 800; color: #0b3d78; letter-spacing: 0.08em">HUMAN ON TECHNOLOGY</p>
+<h1 style="margin: 0 0 20px; font-size: clamp(34px, 3.6vw, 56px); line-height: 1.18; font-weight: 800; letter-spacing: -0.02em; color: #111111">이로운 기술만 고민하는<br>토탈 헬스케어 기업</h1>
+<p style="margin: 0 0 28px; font-size: 17px; color: #3d4452; max-width: 34em">원료 공급부터 완제품, 위탁생산까지. 미생물 발효기술로 함께 성장할 B2B 파트너를 찾습니다.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#business" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 16px; font-weight: 800">사업영역 보기</a>
+<a href="#contact" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #111111; color: #111111; font-size: 16px; font-weight: 800; box-sizing: border-box">협업 제안</a>
+</div>
+</div>
+<div class="hero-visual" style="flex: 1 1 360px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<div style="background: #ffffff; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 32px"><span style="font-size: 14px; font-weight: 800; color: #0b3d78">01</span><span style="font-size: 22px; font-weight: 800">프로바이오틱스</span></div>
+<div style="background: #ffffff; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 32px"><span style="font-size: 14px; font-weight: 800; color: #0b3d78">02</span><span style="font-size: 22px; font-weight: 800">OEM · ODM</span></div>
+<div style="background: #ffffff; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 32px"><span style="font-size: 14px; font-weight: 800; color: #0b3d78">03</span><span style="font-size: 22px; font-weight: 800">농축산제제</span></div>
+<div style="background: #ffffff; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 32px"><span style="font-size: 14px; font-weight: 800; color: #0b3d78">04</span><span style="font-size: 22px; font-weight: 800">세포배양배지</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Hero controls -->
+<div style="position: absolute; left: 0; right: 0; bottom: 36px; display: flex; justify-content: center; pointer-events: none">
+<div style="pointer-events: auto; display: flex; align-items: center; gap: 14px; padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,0.92); box-shadow: 0 4px 16px rgba(0,0,0,0.12)">
+<button type="button" id="hero-prev" aria-label="이전 슬라이드" style="width: 36px; height: 36px; border: none; background: transparent; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #111111">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+</button>
+<div style="display: flex; gap: 6px; align-items: center">
+<button type="button" class="hero-dot is-active" data-go="0" aria-label="1번째 슬라이드"></button>
+<button type="button" class="hero-dot" data-go="1" aria-label="2번째 슬라이드"></button>
+<button type="button" class="hero-dot" data-go="2" aria-label="3번째 슬라이드"></button>
+</div>
+<span style="font-size: 13px; font-weight: 800; color: #111111; min-width: 36px; text-align: center"><span id="slide-num">1</span> / 3</span>
+<button type="button" id="hero-pause" aria-label="일시 정지" style="width: 36px; height: 36px; border: none; background: transparent; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #111111">
+<div data-if="paused" hidden>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5l12 7-12 7z"></path></svg>
+</div>
+<div data-if="playing">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+</div>
+</button>
+<button type="button" id="hero-next" aria-label="다음 슬라이드" style="width: 36px; height: 36px; border: none; background: transparent; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #111111">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+</button>
+</div>
+</div>
 </section>
 
-<section id="quicklinks">
-  <div class="wrap">
-    <div class="quicklink-grid">
-      <a class="quicklink-card" href="#about">
-        <svg class="qicon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="16" width="24" height="18" rx="2"/><path d="M8 16 20 6l12 10"/><line x1="20" y1="22" x2="20" y2="34"/></svg>
-        <h5>회사소개</h5>
-        <p>미생물 발효기술 기반 헬스케어 기업, 휴온텍을 소개합니다.</p>
-        <span class="more">더 알아보기 →</span>
-      </a>
-      <a class="quicklink-card" href="#business">
-        <svg class="qicon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="10" width="26" height="8" rx="2"/><rect x="7" y="22" width="26" height="8" rx="2"/><circle cx="13" cy="14" r="1.4" fill="currentColor" stroke="none"/><circle cx="13" cy="26" r="1.4" fill="currentColor" stroke="none"/></svg>
-        <h5>사업영역</h5>
-        <p>프로바이오틱스부터 OEM·ODM까지 4대 사업축을 확인하세요.</p>
-        <span class="more">더 알아보기 →</span>
-      </a>
-      <a class="quicklink-card" href="#technology">
-        <svg class="qicon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="12" y="15" width="16" height="10" rx="5"/><line x1="20" y1="15" x2="20" y2="8"/><line x1="16" y1="8" x2="24" y2="8"/></svg>
-        <h5>핵심기술</h5>
-        <p>특허 균주 HOT01의 기술적 근거와 기능성을 살펴보세요.</p>
-        <span class="more">더 알아보기 →</span>
-      </a>
-      <a class="quicklink-card" href="#contact">
-        <svg class="qicon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 34S8 24.5 8 15.5A8 8 0 0 1 20 8a8 8 0 0 1 12 7.5C32 24.5 20 34 20 34Z"/><circle cx="20" cy="16" r="3"/></svg>
-        <h5>오시는 길</h5>
-        <p>협업 제안과 문의는 언제든 연락 주시기 바랍니다.</p>
-        <span class="more">문의하기 →</span>
-      </a>
-    </div>
-  </div>
+<!-- Quick category icons -->
+<section aria-label="바로가기" style="padding: 36px 0 0">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<div class="quick-grid">
+<a class="qtile" href="#business" data-tab-link="0">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">01</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><g transform="rotate(45 20 20)"><rect x="7" y="14" width="26" height="12" rx="6"></rect><line x1="20" y1="14" x2="20" y2="26"></line></g></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">프로바이오틱스</div><div class="qs" style="font-size: 13px; margin-top: 4px">특허 균주 HOT01</div></div>
+</a>
+<a class="qtile" href="#business" data-tab-link="1">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">02</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M16 5h8v9l6.5 11.5A4 4 0 0 1 27 31H13a4 4 0 0 1-3.5-5.5L16 14V5Z"></path><line x1="13.5" y1="24" x2="26.5" y2="24"></line></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">세포배양배지</div><div class="qs" style="font-size: 13px; margin-top: 4px">Celldy 기초배지 · FBS</div></div>
+</a>
+<a class="qtile" href="#business" data-tab-link="2">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">03</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 33V18l7 4.5V18l7 4.5V18l7 4.5V33H6Z"></path><line x1="6" y1="33" x2="34" y2="33"></line></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">OEM · ODM</div><div class="qs" style="font-size: 13px; margin-top: 4px">미생물 발효 수탁생산</div></div>
+</a>
+<a class="qtile" href="#business" data-tab-link="3">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">04</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 33V19c0-7 6-12.5 12.5-12.5 0 6.9-5.6 12.5-12.5 12.5"></path><path d="M20 23c0-4.8-3.9-8.7-8.7-8.7 0 4.8 3.9 8.7 8.7 8.7"></path></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">농축산제제</div><div class="qs" style="font-size: 13px; margin-top: 4px">과수 · 천마 발효 소재</div></div>
+</a>
+<a class="qtile" href="#technology">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">05</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="20" r="12"></circle><path d="M14 20l4 4 8-8"></path></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">특허기술</div><div class="qs" style="font-size: 13px; margin-top: 4px">제10-2005617호</div></div>
+</a>
+<a class="qtile qdark" href="#contact">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="qn" style="font-size: 13px; font-weight: 800">06</span><span class="qa" style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></div>
+<svg class="qi" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="9" width="28" height="22" rx="3"></rect><path d="M7 11l13 10 13-10"></path></svg>
+<div style="margin-top: auto"><div style="font-size: 17px; font-weight: 800">협업 문의</div><div class="qs" style="font-size: 13px; margin-top: 4px">원료 · 공동개발 · L/O</div></div>
+</a>
+</div>
+</div>
 </section>
 
-<section id="about">
-  <div class="wrap">
-    <p class="eyebrow"><span class="num">01</span> Company</p>
-    <h2 class="headline">미생물 발효기술 기반<br>헬스케어 기업</h2>
-    <p class="lede">부경대학교의 우수 기술을 이전받아 2024년 10월 설립된 연구개발특구 연구소기업입니다. 항콜레스테롤 활성이 확인된 유산균 1종에 대한 전용실시권을 확보하고, 이를 기반으로 산업화·양산화 연구를 진행하고 있습니다.</p>
+<!-- BUSINESS -->
+<section id="business" style="padding: 72px 0 64px">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<h2 style="margin: 0 0 12px; text-align: center; font-size: clamp(28px, 3vw, 44px); font-weight: 800; letter-spacing: -0.02em">4대 핵심 사업</h2>
+<p style="margin: 0 0 24px; text-align: center; font-size: 17px; color: #4b5260">B2B 원료 공급부터 완제품, 위탁생산까지 미생물 발효기술로 확장합니다.</p>
+<div role="tablist" aria-label="사업 분야" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 28px">
+<button type="button" role="tab" class="biz-tab is-active" data-tab="0" aria-selected="true">프로바이오틱스</button>
+<button type="button" role="tab" class="biz-tab" data-tab="1" aria-selected="false">세포배양배지</button>
+<button type="button" role="tab" class="biz-tab" data-tab="2" aria-selected="false">OEM · ODM</button>
+<button type="button" role="tab" class="biz-tab" data-tab="3" aria-selected="false">농축산제제</button>
+</div>
 
-    <div class="about-grid">
-      <div>
-        <div class="fact-list">
-          <div class="fact"><div class="k">설립</div><div class="v">2024. 10</div></div>
-          <div class="fact"><div class="k">구분</div><div class="v">연구개발특구 연구소기업</div></div>
-          <div class="fact"><div class="k">기술이전</div><div class="v">국립부경대학교 산학협력단</div></div>
-          <div class="fact"><div class="k">확보기술</div><div class="v">항콜레스테롤 유산균 1종 · 전용실시권</div></div>
-        </div>
-      </div>
-      <div class="vision-panel">
-        <p class="en">Vision 2030</p>
-        <h3>널리 이롭게 하는 기술로,<br>전문 헬스케어 기업으로</h3>
-        <ol>
-          <li><span class="idx">01</span>대학·연구소의 우수 기술을 유치하고 산업화·양산화 연구를 통해 사업화를 실현합니다.</li>
-          <li><span class="idx">02</span>식품·건강기능식품, 세포배양배지, 미생물 발효 OEM·ODM 파이프라인을 구축합니다.</li>
-          <li><span class="idx">03</span>경남 진주시를 기반으로 본점·연구소·생산시설을 구축하고 지역 우수 인재를 채용합니다.</li>
-          <li><span class="idx">04</span>기업공개(IPO)를 통해 2030년 코스닥 상장을 목표로 합니다.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
+<div data-if="t0">
+<div class="biz-grid" style="display: grid; gap: 20px">
+<div class="ht-card" style="grid-row: span 2; background: #eef1f6; border-radius: 28px; padding: 40px 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 360px; box-sizing: border-box">
+<div>
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 800; color: #0b3d78">주력 사업</p>
+<h3 style="margin: 0 0 16px; font-size: 36px; font-weight: 800; letter-spacing: -0.02em">프로바이오틱스</h3>
+<p style="margin: 0; font-size: 17px; color: #3d4452; max-width: 30em">고시형·개별인정형 원료를 개발합니다. 벌크 원료 10kg 단위 공급과 완제품 B2C를 함께 전개합니다.</p>
+</div>
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#product" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 15px; font-weight: 800">대표 제품 보기</a></div>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">원료 공급</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">벌크 10kg 단위</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">상온 유통 가능한 생균으로 물류·보관 비용과 리드타임을 줄입니다. 소비기한 제조일로부터 12개월.</p>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">공동개발 · L/O</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">개별인정형 원료</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">전임상·임상 데이터 기반의 공동 개발과 라이선스 아웃을 제안합니다.</p>
+</div>
+</div>
+</div>
+
+<div data-if="t1" hidden>
+<div class="biz-grid" style="display: grid; gap: 20px">
+<div class="ht-card" style="grid-row: span 2; background: #111111; color: #ffffff; border-radius: 28px; padding: 40px 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 360px; box-sizing: border-box">
+<div>
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 800; color: #b9c2cf">수탁 생산</p>
+<h3 style="margin: 0 0 16px; font-size: 36px; font-weight: 800; letter-spacing: -0.02em; color: #ffffff">OEM · ODM</h3>
+<p style="margin: 0; font-size: 17px; color: #c9ced6; max-width: 30em">미생물 발효 수탁 생산과 제품 개발을 대행합니다. 대량생산·자동화 설비로 원가 경쟁력을 확보합니다.</p>
+</div>
+<div><a href="#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: #ffffff; color: #111111; font-size: 15px; font-weight: 800">위탁생산 문의</a></div>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">제품 기획</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">개발부터 생산까지</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">원료 선정, 제형 설계, 생산까지 한 번에 진행합니다.</p>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">공급가</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">합리적인 단가</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">대량생산·자동화 설비 기반으로 경쟁력 있는 공급가를 제시합니다.</p>
+</div>
+</div>
+</div>
+
+<div data-if="t2" hidden>
+<div class="biz-grid" style="display: grid; gap: 20px">
+<div class="ht-card" style="grid-row: span 2; background: #e9f1ea; border-radius: 28px; padding: 40px 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 360px; box-sizing: border-box">
+<div>
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 800; color: #2f5d3a">신규 확장</p>
+<h3 style="margin: 0 0 16px; font-size: 36px; font-weight: 800; letter-spacing: -0.02em">농축산제제</h3>
+<p style="margin: 0; font-size: 17px; color: #3d4452; max-width: 30em">과수질병 타겟 미생물, 천마발효물 등 농축산 분야 미생물 제제를 개발합니다.</p>
+</div>
+<div><a href="#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 15px; font-weight: 800">공동연구 문의</a></div>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">작물</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">과수질병 타겟 미생물</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">과수 병해를 겨냥한 미생물 제제를 연구합니다.</p>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">발효 소재</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">천마발효물</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">지역 특화 소재를 미생물 발효로 고부가가치화합니다.</p>
+</div>
+</div>
+</div>
+
+<div data-if="t3" hidden>
+<div class="media-grid" style="display: grid; gap: 20px">
+<div class="ht-card" style="grid-row: span 2; background: #0a1a33; color: #ffffff; border-radius: 28px; padding: 40px 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 360px; box-sizing: border-box">
+<div>
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 800; color: #8cc4f5">연구자 대상</p>
+<h3 style="margin: 0 0 16px; font-size: 36px; font-weight: 800; letter-spacing: -0.02em; color: #ffffff">세포배양배지</h3>
+<p style="margin: 0; font-size: 17px; color: #c3cfdf; max-width: 30em">자체 브랜드 Celldy(셀디)의 DMEM 등 범용 배지와 CAR-NK 배지 제품군을 공급합니다.</p>
+</div>
+<div><a href="#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: #ffffff; color: #0a1a33; font-size: 15px; font-weight: 800">제품 문의</a></div>
+</div>
+<div class="ht-card" style="background: #eef0f2; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
+<img src="images/celldy-rpmi1640.png" alt="Celldy RPMI1640 배지 500 mL 병" style="display: block; width: 100%; height: 220px; object-fit: cover; object-position: center 60%">
+<div style="padding: 24px 32px 32px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #0b3d78">Classical Media Line</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">기초배지</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">DMEM, RPMI, MEM 등 기초배지 전체 공급</p>
+</div>
+</div>
+<div class="ht-card" style="background: #eef0f2; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
+<img src="images/celldy-fbs.png" alt="Celldy FBS 우태아혈청 500 mL 병" style="display: block; width: 100%; height: 220px; object-fit: cover; object-position: center 60%">
+<div style="padding: 24px 32px 32px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #8a6a1f">Media Supplement Line</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">FBS</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">Fetal Bovine Serum · Triple 0.1 µm Membrane Filtered · 500 mL</p>
+</div>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">Celldy</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">CAR-NK 배지</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">면역세포 배양을 위한 전용 배지 제품군.</p>
+</div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 28px; padding: 28px 28px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 13px; font-weight: 800; color: #4b5260">Celldy</p>
+<h4 style="margin: 0; font-size: 22px; font-weight: 800">커스텀 배지</h4>
+<p style="margin: 0; font-size: 15px; color: #4b5260">소규모 커스텀배지 제조를 지원</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section id="business" class="tint">
-  <div class="wrap">
-    <p class="eyebrow"><span class="num">02</span> Business</p>
-    <h2 class="headline">4대 핵심 사업축</h2>
-    <p class="lede">B2B 원료 공급부터 완제품, 위탁생산까지 미생물 발효기술을 기반으로 사업 영역을 넓혀가고 있습니다.</p>
-
-    <div class="axis-grid">
-      <div class="axis-card">
-        <div class="idx-row">
-          <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3"><g transform="rotate(45 20 20)"><rect x="7" y="14" width="26" height="12" rx="6"/><line x1="20" y1="14" x2="20" y2="26"/></g></svg>
-          </div>
-          <div class="idx">01</div>
-        </div>
-        <div class="lead-flag">주력 사업</div>
-        <h4>프로바이오틱스</h4>
-        <p>고시형·개별인정형 원료 개발. 벌크 원료 10kg 단위 공급과 완제품 B2C를 함께 전개합니다.</p>
-      </div>
-      <div class="axis-card">
-        <div class="idx-row">
-          <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M6 33V18l7 4.5V18l7 4.5V18l7 4.5V33H6Z"/><line x1="6" y1="33" x2="34" y2="33"/><line x1="10" y1="18" x2="10" y2="13" stroke-linecap="round"/></svg>
-          </div>
-          <div class="idx">02</div>
-        </div>
-        <div class="lead-flag">수탁 생산</div>
-        <h4>OEM · ODM</h4>
-        <p>미생물 발효 수탁 생산 및 제품 개발 대행. 대량생산·자동화 설비로 원가 경쟁력을 확보합니다.</p>
-      </div>
-      <div class="axis-card">
-        <div class="idx-row">
-          <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 33V19c0-7 6-12.5 12.5-12.5 0 6.9-5.6 12.5-12.5 12.5"/><path d="M20 23c0-4.8-3.9-8.7-8.7-8.7 0 4.8 3.9 8.7 8.7 8.7"/></svg>
-          </div>
-          <div class="idx">03</div>
-        </div>
-        <div class="lead-flag">신규 확장</div>
-        <h4>농축산제제</h4>
-        <p>과수질병 타겟 미생물, 천마발효물 등 농축산 분야 미생물 제제를 개발합니다.</p>
-      </div>
-      <div class="axis-card">
-        <div class="idx-row">
-          <div class="axis-icon" aria-hidden="true">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><path d="M16 5h8v9l6.5 11.5A4 4 0 0 1 27 31H13a4 4 0 0 1-3.5-5.5L16 14V5Z"/><line x1="13.5" y1="24" x2="26.5" y2="24"/></svg>
-          </div>
-          <div class="idx">04</div>
-        </div>
-        <div class="lead-flag">연구자 대상</div>
-        <h4>세포배양배지</h4>
-        <p>자체 브랜드 Celldy(셀디)의 DMEM 등 범용 배지와 CAR-NK 배지 제품군을 공급합니다.</p>
-      </div>
-    </div>
-
-    <div class="product-panel">
-      <figure class="product-photo">
-        <img src="images/ldl-cut-pro-product.png" alt="엘디엘컷 프로(LDL CUT PRO) 제품 용기 사진" width="150" height="284">
-        <figcaption>LDL CUT PRO 실제 제품</figcaption>
-      </figure>
-      <div>
-        <div class="product-head">
-          <div>
-            <div class="name">엘디엘컷 프로 <span class="en">LDL CUT PRO</span></div>
-          </div>
-        </div>
-        <p class="sub">캡슐당 100억 CFU 건강기능식품 · 고농도 500억 제품 라인업 준비 중</p>
-        <table class="spec">
-          <tr><th>균주명</th><td><em>Lactiplantibacillus plantarum</em> HOT01</td></tr>
-          <tr><th>유래</th><td>김치 (식물성)</td></tr>
-          <tr><th>보증성분</th><td>1.0 × 10¹⁰ CFU/g (캡슐당 100억)</td></tr>
-          <tr><th>제형 · 보관</th><td>생균(Live) · 상온 보관</td></tr>
-          <tr><th>제조원</th><td>㈜휴온텍 (대한민국)</td></tr>
-          <tr><th>원료 형태</th><td>벌크 10kg 단위 · 소비기한 제조일로부터 12개월</td></tr>
-        </table>
-      </div>
-      <div class="func-row">
-        <div class="func-item">
-          <div class="badge">01</div>
-          <div><h5>장 건강</h5><p>유익균 증식 · 유해균 억제 · 배변활동 원활</p></div>
-        </div>
-        <div class="func-item ferment">
-          <div class="badge">02</div>
-          <div><h5>콜레스테롤</h5><p>혈중 콜레스테롤 개선 · 항상성 유지</p></div>
-        </div>
-        <div class="func-item">
-          <div class="badge">03</div>
-          <div><h5>공동연구</h5><p>동아대학교 이중호 교수팀과 in vivo 연구 진행 중</p></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="partner-grid">
-      <div class="partner-card">
-        <h5>01 · 원료 공급</h5>
-        <p>L. plantarum HOT01 벌크 원료를 10kg 단위로 공급합니다. 상온 유통이 가능한 생균으로 물류·보관 비용과 리드타임을 줄일 수 있습니다.</p>
-      </div>
-      <div class="partner-card">
-        <h5>02 · OEM · ODM</h5>
-        <p>미생물 발효 수탁 생산과 제품 기획을 대행합니다. 대량생산·자동화 설비 기반의 합리적인 공급가를 제시합니다.</p>
-      </div>
-      <div class="partner-card">
-        <h5>03 · 공동개발 · L/O</h5>
-        <p>개별인정형 원료 공동 개발 및 라이선스 아웃. 전임상·임상 데이터 기반의 오픈이노베이션 협업을 제안합니다.</p>
-      </div>
-    </div>
-    <div class="partner-cta">
-      <a class="cta-btn" href="#contact">협업 문의하기</a>
-    </div>
-  </div>
+<!-- PRODUCT -->
+<section id="product" style="padding: 0 0 72px">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<div style="background: #f4f5f7; border-radius: 32px; padding: clamp(28px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 280px; display: flex; justify-content: center; min-width: 0">
+<img src="images/ldl-cut-pro-lifestyle.png" alt="엘디엘컷 프로 제품 연출 사진" style="display: block; width: 100%; max-width: 340px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 24px">
+</div>
+<div style="flex: 2 1 480px; min-width: 0">
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 800; color: #0b3d78">대표 제품</p>
+<h2 style="margin: 0 0 8px; font-size: clamp(30px, 3.2vw, 48px); font-weight: 800; letter-spacing: -0.02em">엘디엘컷 프로</h2>
+<p style="margin: 0 0 28px; font-size: 18px; color: #4b5260">LDL CUT PRO · 캡슐당 100억 CFU 건강기능식품 · 500억 고농도 라인업 준비 중</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 32px">
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">균주</div><div style="font-size: 15px; font-weight: 800"><i>L. plantarum</i> HOT01</div></div>
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">유래</div><div style="font-size: 15px; font-weight: 800">김치 (식물성)</div></div>
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">보증성분</div><div style="font-size: 15px; font-weight: 800">1.0 × 10¹⁰ CFU/g</div></div>
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">제형 · 보관</div><div style="font-size: 15px; font-weight: 800">생균 · 상온 보관</div></div>
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">원료 형태</div><div style="font-size: 15px; font-weight: 800">벌크 10kg · 12개월</div></div>
+<div style="background: #ffffff; border-radius: 18px; padding: 20px"><div style="font-size: 13px; color: #4b5260; margin-bottom: 6px">제조원</div><div style="font-size: 15px; font-weight: 800">㈜휴온텍 (대한민국)</div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px">
+<span style="padding: 8px 16px; border-radius: 999px; background: #0b3d78; color: #ffffff; font-size: 14px; font-weight: 800">장 건강</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: #0b3d78; color: #ffffff; font-size: 14px; font-weight: 800">콜레스테롤 개선</span>
+<span style="padding: 8px 16px; border-radius: 999px; border: 1px solid #b8c0cc; color: #111111; font-size: 14px">동아대학교 in vivo 공동연구 진행 중</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#contact" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 16px; font-weight: 800">구매 · 원료 문의</a>
+<a href="#technology" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #111111; color: #111111; font-size: 16px; font-weight: 800; box-sizing: border-box">기술 근거 보기</a>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section id="technology">
-  <div class="wrap">
-    <p class="eyebrow"><span class="num">03</span> Technology</p>
-    <h2 class="headline">핵심 기술 · 특허 균주 HOT01</h2>
-    <p class="lede">국립부경대학교 산학협력단으로부터 기술이전받아 전용실시권 설정을 완료한 항콜레스테롤 활성 우수 균주입니다.</p>
-
-    <div class="tech-grid">
-      <div>
-        <table class="patent">
-          <tr><th>균주</th><td>항콜레스테롤 활성이 우수한 신규 락토바실러스 플란타룸 F.M.B #31 균주</td></tr>
-          <tr><th>등록번호</th><td>제10-2005617호 (등록특허)</td></tr>
-          <tr><th>출원일 · 출원번호</th><td>2017. 02. 08 · 10-2017-0017616</td></tr>
-          <tr><th>발명자</th><td>김영목, 박홍엽</td></tr>
-          <tr><th>보유기관</th><td>국립부경대학교 산학협력단 → ㈜휴온텍 전용실시권</td></tr>
-        </table>
-        <div class="evidence-box">
-          <p>스크리닝된 24종 균주 중 최고 수준의 콜레스테롤 저감 효과(Cholesterol-lowering effect)를 나타낸 균주를 선발하여 산업화 대상으로 확정했습니다.</p>
-          <p>장 건강 및 콜레스테롤 항상성 유지 기능 관련 동물실험을 동아대학교와 함께 진행하고 있습니다.</p>
-        </div>
-      </div>
-      <div>
-        <p class="lede" style="margin-top:0;">균주 우수 특성</p>
-        <div class="trait-badges">
-          <div class="trait-badge"><span class="dot"></span>항콜레스테롤 활성</div>
-          <div class="trait-badge"><span class="dot"></span>항산화 활성</div>
-          <div class="trait-badge"><span class="dot"></span>장 정착능</div>
-          <div class="trait-badge"><span class="dot"></span>내산성</div>
-          <div class="trait-badge"><span class="dot"></span>내담즙성</div>
-          <div class="trait-badge"><span class="dot"></span>내염성</div>
-        </div>
-        <p class="lede" style="margin-top:22px; font-size:0.92rem;">대사성 질환 관련 식품·건강기능식품·치료제로 개발 가능한 균주로 판단되며, 관련 연구를 지속적으로 확장하고 있습니다.</p>
-      </div>
-    </div>
-  </div>
+<!-- TECHNOLOGY -->
+<section id="technology" style="background: #0a1a33; color: #ffffff; padding: 80px 0">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: 64px">
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0 0 12px; font-size: 14px; font-weight: 800; color: #8cc4f5; letter-spacing: 0.08em">TECHNOLOGY</p>
+<h2 style="margin: 0 0 20px; font-size: clamp(28px, 3vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #ffffff">특허 균주 HOT01</h2>
+<p style="margin: 0 0 36px; font-size: 17px; color: #c3cfdf; max-width: 34em">국립부경대학교 산학협력단으로부터 기술이전받아 전용실시권 설정을 완료한 항콜레스테롤 활성 우수 균주입니다. 스크리닝된 24종 중 최고 수준의 콜레스테롤 저감 효과를 보였습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">항콜레스테롤</div>
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">항산화</div>
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">장 정착능</div>
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">내산성</div>
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">내담즙성</div>
+<div style="border: 1px solid #2c4366; border-radius: 16px; padding: 18px 16px; font-size: 15px; font-weight: 800">내염성</div>
+</div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; background: #12264a; border-radius: 28px; padding: 40px 36px; box-sizing: border-box">
+<h3 style="margin: 0 0 24px; font-size: 20px; font-weight: 800; color: #ffffff">등록특허 정보</h3>
+<dl style="margin: 0; display: grid; grid-template-columns: 120px 1fr; gap: 0; font-size: 15px">
+<dt style="padding: 14px 0; color: #a9b8cc; border-top: 1px solid #2c4366">균주</dt><dd style="margin: 0; padding: 14px 0; border-top: 1px solid #2c4366">항콜레스테롤 활성이 우수한 신규 락토바실러스 플란타룸 F.M.B #31 균주</dd>
+<dt style="padding: 14px 0; color: #a9b8cc; border-top: 1px solid #2c4366">등록번호</dt><dd style="margin: 0; padding: 14px 0; border-top: 1px solid #2c4366; font-weight: 800">제10-2005617호</dd>
+<dt style="padding: 14px 0; color: #a9b8cc; border-top: 1px solid #2c4366">출원</dt><dd style="margin: 0; padding: 14px 0; border-top: 1px solid #2c4366">2017. 02. 08 · 10-2017-0017616</dd>
+<dt style="padding: 14px 0; color: #a9b8cc; border-top: 1px solid #2c4366">발명자</dt><dd style="margin: 0; padding: 14px 0; border-top: 1px solid #2c4366">김영목, 박홍엽</dd>
+<dt style="padding: 14px 0; color: #a9b8cc; border-top: 1px solid #2c4366">권리</dt><dd style="margin: 0; padding: 14px 0; border-top: 1px solid #2c4366">국립부경대학교 산학협력단 → ㈜휴온텍 전용실시권</dd>
+</dl>
+</div>
+</div>
 </section>
 
-<section id="history" class="tint">
-  <div class="wrap">
-    <p class="eyebrow"><span class="num">04</span> History</p>
-    <h2 class="headline">연혁 및 성장 로드맵</h2>
-    <p class="lede">설립 이후 국산화 원료 개발을 시작으로, 임상 확보와 오픈이노베이션을 거쳐 2030년 코스닥 상장을 목표로 성장합니다.</p>
-
-    <div class="timeline">
-      <div class="t-item">
-        <div class="year en">2024</div>
-        <div class="rail"><div class="dot"></div></div>
-        <div class="body"><h5>연구소기업 설립</h5><p>국립부경대학교 기술이전 기반, 연구개발특구 연구소기업으로 출발 (2024. 10)</p></div>
-      </div>
-      <div class="t-item">
-        <div class="year en">2026</div>
-        <div class="rail"><div class="dot"></div></div>
-        <div class="body"><h5>고시형 원료 개발 · B2B / B2C 동시 진입</h5><p>연구·생산·총무 인력 채용과 함께 원료 사업을 본격화합니다.</p></div>
-      </div>
-      <div class="t-item">
-        <div class="year en">2027–2028</div>
-        <div class="rail"><div class="dot"></div></div>
-        <div class="body"><h5>전임상 · 임상 추진</h5><p>개별인정형 원료 등록을 준비하고 양산 설비를 확충합니다.</p></div>
-      </div>
-      <div class="t-item">
-        <div class="year en">2029</div>
-        <div class="rail"><div class="dot"></div></div>
-        <div class="body"><h5>오픈이노베이션</h5><p>L/O 기반 대기업·중견기업 협업 비즈니스 모델을 추진합니다.</p></div>
-      </div>
-      <div class="t-item">
-        <div class="year en">2030</div>
-        <div class="rail"><div class="dot"></div></div>
-        <div class="body"><h5>코스닥 상장 목표</h5><p>기업공개(IPO)를 통한 전문 헬스케어 기업으로의 도약을 목표로 합니다.</p></div>
-      </div>
-    </div>
-
-    <div class="facility-grid">
-      <div class="facility-card">
-        <h5>조직 · 소재지 <span class="en">Location</span></h5>
-        <p>경상국립대학교 창업보육센터에 본점 및 연구소를 두고, 경남 항노화 바이오 클러스터를 기반으로 생산·인력 수급 기반을 마련하고 있습니다.</p>
-      </div>
-      <div class="facility-card">
-        <h5>산학연 협력 네트워크 <span class="en">Network</span></h5>
-        <p>경상국립대학교를 비롯한 지역 산학연 기관과 협력하며, 안전성 평가와 공동 연구를 위한 네트워크를 지속적으로 확대하고 있습니다.</p>
-      </div>
-    </div>
-  </div>
+<!-- COMPANY -->
+<section id="company" style="padding: 80px 0 64px">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<h2 style="margin: 0 0 12px; text-align: center; font-size: clamp(28px, 3vw, 44px); font-weight: 800; letter-spacing: -0.02em">미생물 발효기술 기반 헬스케어 기업</h2>
+<p style="margin: 0 auto 36px; text-align: center; font-size: 17px; color: #4b5260; max-width: 44em">부경대학교의 우수 기술을 이전받아 2024년 10월 설립된 연구개발특구 연구소기업입니다.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px">
+<div style="border-top: 2px solid #111111; padding-top: 20px"><div style="font-size: 36px; font-weight: 800; letter-spacing: -0.02em">2024.10</div><div style="font-size: 15px; color: #4b5260">연구소기업 설립</div></div>
+<div style="border-top: 2px solid #111111; padding-top: 20px"><div style="font-size: 36px; font-weight: 800; letter-spacing: -0.02em">24종 중 1위</div><div style="font-size: 15px; color: #4b5260">콜레스테롤 저감 스크리닝</div></div>
+<div style="border-top: 2px solid #111111; padding-top: 20px"><div style="font-size: 36px; font-weight: 800; letter-spacing: -0.02em">100억 CFU</div><div style="font-size: 15px; color: #4b5260">캡슐당 보증 생균수</div></div>
+<div style="border-top: 2px solid #111111; padding-top: 20px"><div style="font-size: 36px; font-weight: 800; letter-spacing: -0.02em">2030</div><div style="font-size: 15px; color: #4b5260">코스닥 상장 목표</div></div>
+</div>
+<div style="background: #f4f5f7; border-radius: 28px; padding: clamp(28px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 280px">
+<p style="margin: 0 0 10px; font-size: 14px; font-weight: 800; color: #0b3d78">VISION 2030</p>
+<h3 style="margin: 0; font-size: 28px; font-weight: 800; line-height: 1.35">널리 이롭게 하는 기술로,<br>전문 헬스케어 기업으로</h3>
+</div>
+<ol style="flex: 2 1 480px; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 32px; font-size: 15px; color: #3d4452">
+<li style="display: flex; gap: 14px"><span style="font-weight: 800; color: #0b3d78">01</span><span>대학·연구소 우수 기술을 유치하고 산업화·양산화 연구로 사업화를 실현합니다.</span></li>
+<li style="display: flex; gap: 14px"><span style="font-weight: 800; color: #0b3d78">02</span><span>식품·건강기능식품, 세포배양배지, 미생물 발효 OEM·ODM 파이프라인을 구축합니다.</span></li>
+<li style="display: flex; gap: 14px"><span style="font-weight: 800; color: #0b3d78">03</span><span>경남 진주시 기반 본점·연구소·생산시설을 구축하고 지역 인재를 채용합니다.</span></li>
+<li style="display: flex; gap: 14px"><span style="font-weight: 800; color: #0b3d78">04</span><span>기업공개(IPO)를 통해 2030년 코스닥 상장을 목표로 합니다.</span></li>
+</ol>
+</div>
+</div>
 </section>
 
-<section id="contact">
-  <div class="wrap">
-    <p class="eyebrow"><span class="num">05</span> Contact</p>
-    <h2 class="headline">오시는 길 및 문의</h2>
-    <p class="lede">원료 공급, OEM·ODM, 공동개발 등 협업 제안은 아래 연락처로 문의해 주시기 바랍니다.</p>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="contact-row">
-          <div class="ic">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.1 7-12.5A7 7 0 0 0 5 9.5C5 14.9 12 22 12 22Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
-          </div>
-          <div>
-            <div class="k">Address</div>
-            <div class="v">경남 진주시 진주대로 501<br>경상국립대학교 창업보육센터 C동 206호</div>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="ic">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5c0-1 1-1 1-1h3l2 5-2 1.5a11 11 0 0 0 5.5 5.5L15 14l5 2s0 1-1 1c-1 0-4 .5-8-3.5S4 6 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <div class="k">Tel</div>
-            <a class="v" href="tel:070-4589-5744">070-4589-5744</a><br>
-            <a class="v" href="tel:010-4524-3946">010-4524-3946</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="ic">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <div class="k">E-mail</div>
-            <a class="v" href="mailto:ceo@huontech.co.kr">ceo@huontech.co.kr</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="ic">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="12" height="18" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M16 9h4v12h-4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><line x1="7.5" y1="7" x2="7.5" y2="7.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="7" x2="12" y2="7.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="7.5" y1="11" x2="7.5" y2="11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="11" x2="12" y2="11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="7.5" y1="15" x2="7.5" y2="15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="15" x2="12" y2="15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <div>
-            <div class="k">Company</div>
-            <div class="v">㈜휴온텍 · Human on Technology</div>
-          </div>
-        </div>
-        <a class="cta-btn" href="tel:070-4589-5744" style="align-self:flex-start; margin-top:6px;">전화 문의하기</a>
-      </div>
-    </div>
-  </div>
+<!-- HISTORY -->
+<section id="history" style="padding: 0 0 80px">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 28px">
+<h2 style="margin: 0; font-size: clamp(28px, 3vw, 44px); font-weight: 800; letter-spacing: -0.02em">연혁 및 성장 로드맵</h2>
+<span style="font-size: 15px; color: #4b5260">2024 설립 → 2030 코스닥 상장</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div class="ht-card" style="background: #111111; color: #ffffff; border-radius: 24px; padding: 28px 24px; min-height: 180px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 30px; font-weight: 800">2024</span><span style="font-size: 17px; font-weight: 800">연구소기업 설립</span><span style="font-size: 14px; color: #c9ced6">국립부경대학교 기술이전 기반, 연구개발특구 연구소기업으로 출발</span></div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 24px; padding: 28px 24px; min-height: 180px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 30px; font-weight: 800">2026</span><span style="font-size: 17px; font-weight: 800">고시형 원료 · B2B/B2C 진입</span><span style="font-size: 14px; color: #4b5260">연구·생산·총무 인력 채용과 함께 원료 사업 본격화</span></div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 24px; padding: 28px 24px; min-height: 180px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 30px; font-weight: 800">2027–28</span><span style="font-size: 17px; font-weight: 800">전임상 · 임상 추진</span><span style="font-size: 14px; color: #4b5260">개별인정형 원료 등록 준비, 양산 설비 확충</span></div>
+<div class="ht-card" style="background: #f4f5f7; border-radius: 24px; padding: 28px 24px; min-height: 180px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 30px; font-weight: 800">2029</span><span style="font-size: 17px; font-weight: 800">오픈이노베이션</span><span style="font-size: 14px; color: #4b5260">L/O 기반 대기업·중견기업 협업 모델 추진</span></div>
+<div class="ht-card" style="background: #eef1f6; border-radius: 24px; padding: 28px 24px; min-height: 180px; display: flex; flex-direction: column; gap: 12px"><span style="font-size: 30px; font-weight: 800; color: #0b3d78">2030</span><span style="font-size: 17px; font-weight: 800">코스닥 상장 목표</span><span style="font-size: 14px; color: #4b5260">전문 헬스케어 기업으로 도약</span></div>
+</div>
+</div>
 </section>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="wordmark"><img class="logo-mark" src="images/huontech-logo.png" alt="HUONTECH"></span>
-        <span class="en">HUMAN ON TECHNOLOGY</span>
-        <p>미생물 발효기술 기반 헬스케어 기업 ㈜휴온텍. 특허 균주 HOT01을 중심으로 프로바이오틱스·세포배양배지·농축산제제·OEM/ODM 사업을 전개합니다.</p>
-      </div>
-      <div class="footer-col">
-        <h6>Sitemap</h6>
-        <ul>
-          <li><a href="#about">회사소개</a></li>
-          <li><a href="#business">사업영역</a></li>
-          <li><a href="#technology">핵심기술</a></li>
-          <li><a href="#history">연혁</a></li>
-          <li><a href="#contact">오시는 길</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h6>Contact</h6>
-        <address>
-          경남 진주시 진주대로 501<br>
-          경상국립대학교 창업보육센터 C동 206호<br><br>
-          TEL. <a href="tel:070-4589-5744">070-4589-5744</a><br>
-          E-mail. <a href="mailto:ceo@huontech.co.kr">ceo@huontech.co.kr</a>
-        </address>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 HUONTECH Co., Ltd. All rights reserved.</span>
-      <span>㈜휴온텍</span>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section id="contact" style="background: #f4f5f7; padding: 72px 0">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 380px; min-width: 0">
+<h2 style="margin: 0 0 16px; font-size: clamp(28px, 3vw, 44px); font-weight: 800; letter-spacing: -0.02em">함께할 파트너를<br>찾고 있습니다</h2>
+<p style="margin: 0 0 32px; font-size: 17px; color: #4b5260">원료 공급, OEM·ODM, 공동개발 등 협업 제안은 언제든 연락 주세요.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="tel:070-4589-5744" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; background: #111111; color: #ffffff; font-size: 16px; font-weight: 800">전화 문의</a>
+<a href="mailto:ceo@huontech.co.kr" style="display: inline-flex; align-items: center; height: 52px; padding: 0 30px; border-radius: 999px; border: 1.5px solid #111111; color: #111111; font-size: 16px; font-weight: 800; box-sizing: border-box">이메일 보내기</a>
+</div>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; background: #ffffff; border-radius: 28px; padding: 12px 32px; box-sizing: border-box">
+<div style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid #e5e7eb"><span style="width: 88px; flex: none; font-size: 14px; color: #4b5260">주소</span><span style="font-size: 16px; font-weight: 800">경남 진주시 진주대로 501<br>경상국립대학교 창업보육센터 C동 206호</span></div>
+<div style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid #e5e7eb"><span style="width: 88px; flex: none; font-size: 14px; color: #4b5260">전화</span><span style="font-size: 16px; font-weight: 800"><a href="tel:070-4589-5744">070-4589-5744</a> · <a href="tel:010-4524-3946">010-4524-3946</a></span></div>
+<div style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid #e5e7eb"><span style="width: 88px; flex: none; font-size: 14px; color: #4b5260">이메일</span><a href="mailto:ceo@huontech.co.kr" style="font-size: 16px; font-weight: 800">ceo@huontech.co.kr</a></div>
+<div style="display: flex; gap: 20px; padding: 22px 0"><span style="width: 88px; flex: none; font-size: 14px; color: #4b5260">협업 분야</span><span style="font-size: 16px; font-weight: 800">원료 공급 · OEM/ODM · 공동개발 · L/O</span></div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #ffffff; border-top: 1px solid #e5e7eb; padding: 44px 0 28px">
+<div style="max-width: 1600px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 56px)">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px; padding-bottom: 40px; border-bottom: 1px solid #e5e7eb">
+<div style="display: flex; flex-direction: column; gap: 12px"><img src="images/huontech-logo.png" alt="HUONTECH" style="height: 18px; width: auto; align-self: flex-start"><span style="font-size: 12px; letter-spacing: 0.14em; color: #4b5260">HUMAN ON TECHNOLOGY</span></div>
+<div><h3 style="margin: 0 0 14px; font-size: 14px; font-weight: 800">사업영역</h3><ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px"><li><a href="#business" style="color: #4b5260">프로바이오틱스</a></li><li><a href="#business" style="color: #4b5260">OEM · ODM</a></li><li><a href="#business" style="color: #4b5260">농축산제제</a></li><li><a href="#business" style="color: #4b5260">세포배양배지</a></li></ul></div>
+<div><h3 style="margin: 0 0 14px; font-size: 14px; font-weight: 800">회사</h3><ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px"><li><a href="#company" style="color: #4b5260">회사소개</a></li><li><a href="#technology" style="color: #4b5260">핵심기술</a></li><li><a href="#history" style="color: #4b5260">연혁</a></li><li><a href="#contact" style="color: #4b5260">오시는 길</a></li></ul></div>
+<div><h3 style="margin: 0 0 14px; font-size: 14px; font-weight: 800">고객지원</h3><ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px"><li><a href="tel:070-4589-5744" style="color: #4b5260">070-4589-5744</a></li><li><a href="mailto:ceo@huontech.co.kr" style="color: #4b5260">ceo@huontech.co.kr</a></li><li><a href="#contact" style="color: #4b5260">협업 제안</a></li></ul></div>
+</div>
+<div style="padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 12px; color: #4b5260">
+<span>㈜휴온텍 · 경남 진주시 진주대로 501 경상국립대학교 창업보육센터 C동 206호 · 사업자등록번호 [사업자등록번호]</span>
+<span>© 2026 HUONTECH Co., Ltd. All rights reserved.</span>
+</div>
+</div>
 </footer>
+
+</div>
 
 <script>
 (function(){
-  var canvas = document.getElementById('ferm-canvas');
-  if(!canvas) return;
-  var ctx = canvas.getContext('2d');
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var particles = [];
-  var w, h, dpr;
-
-  function resize(){
-    var rect = canvas.parentElement.getBoundingClientRect();
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    w = rect.width; h = rect.height;
-    canvas.width = w * dpr; canvas.height = h * dpr;
-    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
-    ctx.setTransform(dpr,0,0,dpr,0,0);
+  var slide = 0, paused = false, N = 3;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function show(name, on){ document.querySelectorAll('[data-if="'+name+'"]').forEach(function(el){ el.hidden = !on; }); }
+  function goSlide(i){
+    slide = (i + N) % N;
+    for (var k = 0; k < N; k++) show('s'+k, k === slide);
+    document.querySelectorAll('.hero-dot').forEach(function(d, k){ d.classList.toggle('is-active', k === slide); });
+    document.getElementById('slide-num').textContent = slide + 1;
   }
-
-  function seed(){
-    particles = [];
-    var count = Math.max(18, Math.floor(w / 60));
-    for(var i=0;i<count;i++){
-      particles.push({
-        x: Math.random()*w,
-        y: h + Math.random()*h,
-        r: 2 + Math.random()*5,
-        speed: 0.18 + Math.random()*0.5,
-        drift: (Math.random()-0.5)*0.3,
-        alpha: 0.12 + Math.random()*0.22
-      });
-    }
+  function setPaused(p){
+    paused = p; show('paused', p); show('playing', !p);
+    document.getElementById('hero-pause').setAttribute('aria-label', p ? '자동 재생' : '일시 정지');
   }
+  document.getElementById('hero-prev').addEventListener('click', function(){ goSlide(slide - 1); });
+  document.getElementById('hero-next').addEventListener('click', function(){ goSlide(slide + 1); });
+  document.getElementById('hero-pause').addEventListener('click', function(){ setPaused(!paused); });
+  document.querySelectorAll('.hero-dot').forEach(function(d){ d.addEventListener('click', function(){ goSlide(+d.dataset.go); }); });
+  if (reduce) setPaused(true);
+  setInterval(function(){ if (!paused) goSlide(slide + 1); }, 6000);
 
-  var teal = '#7ec4f0';
-
-  function draw(){
-    ctx.clearRect(0,0,w,h);
-    for(var i=0;i<particles.length;i++){
-      var p = particles[i];
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = hexToRgba(teal, p.alpha);
-      ctx.fill();
-      if(!reduceMotion){
-        p.y -= p.speed;
-        p.x += p.drift;
-        if(p.y < -10){ p.y = h + 10; p.x = Math.random()*w; }
-      }
-    }
+  // business tabs: tab index -> panel
+  var panels = ['t0', 't3', 't1', 't2'];
+  function goTab(i){
+    panels.forEach(function(p, k){ show(p, k === i); });
+    document.querySelectorAll('.biz-tab').forEach(function(b, k){
+      b.classList.toggle('is-active', k === i);
+      b.setAttribute('aria-selected', k === i ? 'true' : 'false');
+    });
   }
+  document.querySelectorAll('.biz-tab').forEach(function(b){ b.addEventListener('click', function(){ goTab(+b.dataset.tab); }); });
+  document.querySelectorAll('[data-tab-link]').forEach(function(a){ a.addEventListener('click', function(){ goTab(+a.dataset.tabLink); }); });
 
-  function hexToRgba(hex, a){
-    hex = hex.replace('#','');
-    if(hex.length===3){ hex = hex.split('').map(function(c){return c+c;}).join(''); }
-    var num = parseInt(hex,16);
-    var r=(num>>16)&255, g=(num>>8)&255, b=num&255;
-    return 'rgba('+r+','+g+','+b+','+a+')';
-  }
-
-  function loop(){
-    draw();
-    if(!reduceMotion){ requestAnimationFrame(loop); }
-  }
-
-  window.addEventListener('resize', function(){ resize(); seed(); if(reduceMotion) draw(); });
-  resize(); seed(); loop();
-})();
-
-(function(){
-  var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
-  var dots = Array.prototype.slice.call(document.querySelectorAll('#hero-dots button'));
-  if(!slides.length) return;
-  var current = 0;
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var timer;
-
-  function goTo(i){
-    slides[current].classList.remove('is-active');
-    if(dots[current]) dots[current].classList.remove('is-active');
-    current = (i + slides.length) % slides.length;
-    slides[current].classList.add('is-active');
-    if(dots[current]) dots[current].classList.add('is-active');
-  }
-  function startTimer(){
-    if(reduceMotion) return;
-    timer = setInterval(function(){ goTo(current + 1); }, 6000);
-  }
-  function resetTimer(){ clearInterval(timer); startTimer(); }
-
-  var prevBtn = document.getElementById('hero-prev');
-  var nextBtn = document.getElementById('hero-next');
-  if(prevBtn) prevBtn.addEventListener('click', function(){ goTo(current - 1); resetTimer(); });
-  if(nextBtn) nextBtn.addEventListener('click', function(){ goTo(current + 1); resetTimer(); });
-  dots.forEach(function(btn, i){ btn.addEventListener('click', function(){ goTo(i); resetTimer(); }); });
-
-  startTimer();
+  // mobile menu
+  var mt = document.getElementById('mnav-toggle'), mn = document.getElementById('mnav');
+  mt.addEventListener('click', function(){
+    var open = mn.hidden; mn.hidden = !open;
+    mt.setAttribute('aria-expanded', open ? 'true' : 'false');
+    mt.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  });
+  mn.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mn.hidden = true; mt.setAttribute('aria-expanded','false'); }); });
 })();
 </script>
 
